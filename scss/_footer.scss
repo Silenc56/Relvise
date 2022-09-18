@@ -1,0 +1,132 @@
+.footer {
+}
+.container {
+}
+/* HEADER */
+.footer-header {
+  background: #ffffff;
+}
+.footer-header__row {
+}
+.footer-header__content {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.footer-header__content-txt {
+}
+.footer-header__content-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.footer-header__content-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #737373;
+}
+.footer-header__content-btn {
+  color: #ffffff;
+  padding: 15px 40px;
+  background: #ff7b47;
+  //styleName: btn-text;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* MAIN */
+
+.footer-main {
+  background: #17213c;
+  color: #ffffff;
+}
+.container {
+}
+.footer-main__row {
+}
+.footer-main__content {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer-main__content-ul {
+  padding-right: 50px;
+}
+.footer-main__content-ul-li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 170px;
+  width: 148px;
+}
+.title-li {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.text-li {
+  font-size: 14px;
+  font-weight: 600;
+}
+.text-li_tel {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url("./../img/footer/icon-tel-1.svg");
+    left: 0;
+  }
+}
+.text-li_mest {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url("./../img/footer/icon-nav-2.svg");
+    left: 0;
+  }
+}
+.text-li_teleg {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url("./../img/footer/icon-3.svg");
+    left: 0;
+  }
+}
+.text-l {
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+/* FOOTER */
+
+.footer-footer {
+  background: #ffffff;
+}
+.container {
+}
+.footer-footer__row {
+}
+.footer-footer__content {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.footer-footer__content-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #737373;
+}
+.footer-footer__content-messeng {
+  padding-right: 20px;
+}
+.img-footer-messang {
+  padding-right: 20px;
+}

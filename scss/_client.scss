@@ -1,0 +1,9 @@
+@import "_reletiv";
+.client__content-img-grid {
+  display: grid;
+  grid-template-columns: 140px 140px 140px 140px 140px 140px;
+  grid-column-gap: 60px;
+  padding: 30px 20px;
+  padding-left: 72px;
+  justify-content: center;
+}

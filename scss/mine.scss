@@ -1,0 +1,230 @@
+@import "_reletiv";
+@import "_experience";
+@import "_practice";
+@import "_whowe";
+@import "_client";
+@import "_subscribe";
+@import "_getin";
+@import "_footer";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
+  color: #252b42;
+  background-image: url("./../img/header/header-img.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1061px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.container-right {
+  padding-left: calc((100% - 1060px) / 2 + 15px);
+}
+.none {
+  display: none;
+}
+/* header */
+.header {
+  overflow: hidden;
+}
+.header_top {
+  padding: 60px 0 60px 0;
+}
+.header__row {
+  display: flex;
+}
+.header__content {
+  max-width: 509px;
+  margin-bottom: 80px;
+}
+.header__content-title {
+  padding-top: 80px;
+  margin-bottom: 35px;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 80px;
+}
+.header__content-text {
+  max-width: 376px;
+  color: #737373;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.header__btn-mine {
+  display: flex;
+  column-gap: 10px;
+}
+.header__btn {
+  display: inline-block;
+  background-color: #ff7b47;
+  border-radius: 37px;
+  padding: 10px 36px;
+  color: #fff;
+  transition: 0.6s ease;
+  font-size: 14px;
+  font-weight: 700;
+
+  &:hover {
+    border: 1px solid #ff7b47;
+    background-color: #ff7b4700;
+    color: #ff7b47;
+    transition: all 0.4s ease-in;
+  }
+}
+.header__btn-a {
+  display: inline-block;
+  border: 1px solid #0d5c63;
+  border-radius: 37px;
+  padding: 10px 36px;
+  color: #0d5c63;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.6s ease;
+
+  &:hover {
+    border: 1px solid #0d5c63;
+    color: #0d5c63;
+    transition: all 0.4s ease-in;
+    background-color: #0d5c63;
+    color: #fff;
+  }
+}
+.header__grid {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+.header__grid-conteiner {
+  max-width: 328px;
+  height: 242px;
+  background: #fff;
+}
+.header__grid-conteiner-grean {
+  background: #0d5c63;
+  max-width: 328px;
+  height: 242px;
+}
+.header__grid-title-whait {
+  color: #fff;
+}
+.header__grid-conteiner-padding {
+  padding: 25px 40px 5px 40px;
+}
+.header__grid-title {
+  margin-top: 13px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.header__grid-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #737373;
+}
+.header__grid-text-whait {
+  color: #ffffff;
+  max-width: 213px;
+}
+.nav {
+  display: flex;
+
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav__list {
+  display: flex;
+  column-gap: 21px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 136px;
+  a {
+    color: #737373;
+    transition: 1s ease;
+    &:hover {
+      color: #ff7b47;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+.nav__toggle {
+  display: none;
+}
+.menu-icon-wrapper {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon {
+  position: relative;
+  width: 40px;
+  height: 5px;
+  background: #252b42;
+  border-radius: 15px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 5px;
+    left: 0;
+    background: #252b42;
+    transition: transform 0.2s ease-in top 0.2s linear 0.2s;
+    border-radius: 15px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 5px;
+    left: 0;
+    background: #252b42;
+    transition: transform 0.2s ease-in top 0.2s linear 0.2s;
+    border-radius: 15px;
+  }
+}
+.menu-icon.menu-icon-active {
+  background: transparent;
+  &::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  &::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+}
+.no-scrole {
+  overflow-x: hidden;
+}
+.main__grid-experience-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.main__grid-practice-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer-main__content-flex {
+  display: flex;
+  flex-direction: row;
+}

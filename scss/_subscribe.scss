@@ -1,0 +1,55 @@
+.subscribe__content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #17213c;
+  padding: 30px 50px;
+  margin-top: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: #252b42;
+    display: inline-block;
+    top: 65px;
+    left: -1000px;
+    height: 77px;
+    width: 3040px;
+    z-index: -1;
+  }
+}
+.subscribe__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #fff;
+  height: 64px;
+  width: 266px;
+}
+.subscribe-form {
+  height: 58px;
+  width: 450px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+.subscribe-form__input {
+  padding-left: 15px;
+}
+.subscribe-form__btn {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  background: linear-gradient(0deg, #ff7b47, #ff7b47);
+  padding: 15px 22px;
+  transition: 0.6s ease;
+  &:hover {
+    color: #ff7b47;
+    background: none;
+    border: 1px solid #ff7b47;
+    transition: all 0.4s ease-in;
+  }
+}
